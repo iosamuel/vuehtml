@@ -1,0 +1,38 @@
+{
+  "name": "vuehtml",
+  "displayName": "VueHTML",
+  "description": "Syntax highlight for Vue Templates",
+  "author": "Samuel Burbano [IOSamuel] <me@iosamuel.dev>",
+  "icon": "asset/vuehtml.png",
+  "publisher": "iosamuel",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iosamuel/vuehtml.git"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/vuehtml.tmLanguage.json",
+        "scopeName": "text.html.vue-html.vuehtml",
+        "injectTo": [
+          "source.js",
+          "source.ts"
+        ]
+      },
+      {
+        "path": "./syntaxes/vuehtml-html.tmLanguage.json",
+        "scopeName": "text.html.vue-html.vuehtml-html",
+        "injectTo": [
+          "text.html"
+        ]
+      }
+    ]
+  }
+}

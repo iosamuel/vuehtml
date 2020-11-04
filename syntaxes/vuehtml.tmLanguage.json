@@ -1,0 +1,20 @@
+{
+  "injectionSelector": "L:source.js -comment -string, L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
+  "patterns": [
+    {
+      "begin": "(\\s?\\/\\*\\s?(vue-html)\\s?\\*\\/\\s?)(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "comment.block"
+        }
+      },
+      "end": "(`)",
+      "patterns": [
+        {
+          "include": "text.html.vue-html"
+        }
+      ]
+    }
+  ],
+  "scopeName": "text.html.vue-html.vuehtml"
+}

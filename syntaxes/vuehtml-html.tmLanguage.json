@@ -1,0 +1,16 @@
+{
+  "name": "VueHTML",
+  "scopeName": "text.html.vue-html.vuehtml-html",
+  "injectionSelector": "L:text.html.derivative",
+  "patterns": [
+    {
+      "include": "source.vue"
+    },
+    {
+      "include": "source.vue#vue-directives"
+    },
+    {
+      "include": "source.vue#vue-interpolations"
+    }
+  ]
+}
