@@ -34,5 +34,8 @@
         ]
       }
     ]
-  }
+  },
+  "extensionDependencies": [
+    "octref.vetur"
+  ]
 }
