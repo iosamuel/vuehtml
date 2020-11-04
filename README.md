@@ -6,20 +6,14 @@ Syntax Highlight for Vue HTML inside `template strings` and `.html files`.
 
 Use it in `template string` as:
 
-```js
-/* vue-html */ `
-  <div class="discount">
-    <span>Discount Code:</span>
-    <input
-      type="text"
-      placeholder="Code"
-      @keyup.enter="applyDiscount($event)"
-    />
-  </div>
-  <button :disabled="product.stock === 0" @click="addToCart()">
-    Agregar al carrito
-  </button>
-`;
-```
+#### Before
 
-> Note: This extension will automatically add syntax highlight inside .html files
+![Before](asset/vuehtmljs.png)
+
+---
+
+#### After
+
+![After](asset/vuehtmljs1.png)
+
+> Note: This extension will automatically add syntax highlight inside .html
